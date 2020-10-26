@@ -5,11 +5,13 @@ namespace App\Http\Controllers\Front;
 use App\Http\Controllers\Controller;
 use App\Models\Article;
 use App\Models\Category;
+use App\Models\Contact;
 use App\Models\Page;
 use Illuminate\Http\Request;
 
 class Homepage extends Controller
 {
+    /** PAGES VE CATEGORİES ÇOĞU SAYFADA OLDUĞU İÇİN SÜREKLİ KOD TEKRARINDAN KAÇINARAK UFAK BİR KOD YAZALIM */
     public function __construct()
     {
         /** PAGES VE CATEGORİES ÇOĞU SAYFADA OLDUĞU İÇİN SÜREKLİ KOD TEKRARINDAN KAÇINARAK UFAK BİR KOD YAZALIM */
@@ -55,7 +57,6 @@ class Homepage extends Controller
             "category" => $category->name, // KATEGORİ İSMİ (TİTLE İÇİN)
             "articles" => $category->articles()->paginate(2), // KATEGORİYE AİT YAZILAR
         ];
-
         return view('front.category', $data);
     }
 
@@ -66,6 +67,30 @@ class Homepage extends Controller
             "page"=>$page
         ];
         return view('front.page',$data);
+    }
 
+    public function contact(){
+        return view('front.contact');
+    }
+
+    public function contactPost(Request $request){
+        Contact::create($this->validateData());
+        return redirect()->back()->with("contact","Mesajınız Başarıyla Gönderilmiştir. Size en kısa zamanda döneceğiz");
+    }
+
+    public function validateData(){
+        return \request()->validate(array(
+            "name"=>"required",
+            "email"=>"required|email",
+            "topic"=>"required",
+            "message"=>"required|min:10"
+        ),array(
+            "name.required"=>"İsim Alanı Boş Bırakılamaz",
+            "email.required"=>"E-Mail Alanı Boş Bırakılamaz",
+            "email.email"=>"Lütfrn Geçerli Bir E-Mail Giriniz",
+            "topic.required"=>"Konu Kısmı Boş Bırakılamaz",
+            "message.required"=>"Mesaj Kısmı Boş Bırakılamaz",
+            "message.min"=>"Mesajınız 10 Karakterden Küçük Olamaz"
+        ));
     }
 }
