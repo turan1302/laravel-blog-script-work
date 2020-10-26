@@ -26,7 +26,7 @@ class Homepage extends Controller
 
     public function single($category,$slug){
 
-        $blog = Article::where('slug',$slug)->first();
+        $blog = Article::where('slug',$slug)->first()  ?? abort(404,'Değer Yok');
         $blog->increment('hit');
 
         $data = [
@@ -36,5 +36,16 @@ class Homepage extends Controller
         ];
 
         return view('front.post',$data);
+    }
+
+    public function category($slug){
+        $category = Category::whereSlug($slug)->first() ?? abort(404,'Böyle Bir Kategori Bulunamadı');
+        $data = [
+            "category"=>$category->name, // KATEGORİ İSMİ (TİTLE İÇİN)
+            "articles"=>$category->articles()->paginate(2), // KATEGORİYE AİT YAZILAR
+            "categories"=>Category::all()  // KATEGORİ MENÜSÜ
+        ];
+
+        return view('front.category',$data);
     }
 }

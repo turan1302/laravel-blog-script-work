@@ -1,5 +1,5 @@
 @extends('front.layout.content')
-@section('title','Anasayfa')
+@section('title',$blog->title)
 @section('bg',$blog->image)
 @section('content')
     <!-- POST -->

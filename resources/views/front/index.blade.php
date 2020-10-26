@@ -1,5 +1,5 @@
 @extends('front.layout.content')
-@section('title','Anasayfa')
+@section('title','MFSoftware Blog')
 @section('content')
     <!-- Main Content -->
     <div class="container">
