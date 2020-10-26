@@ -21,8 +21,6 @@
   <component name="ChangeListManager">
     <list default="true" id="5e7424d1-763a-4375-8283-e5ebc3f5c105" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Front/Homepage.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Front/Homepage.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/front/layout/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/layout/header.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -144,6 +142,11 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\xampp\htdocs\laravel-fg-blog\resources\views\back\login_layout" />
+    </key>
+  </component>
   <component name="RunManager" selected="PHP Script.Homepage.php">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner scope="XML" />
@@ -169,7 +172,7 @@
       <workItem from="1603543318003" duration="7977000" />
       <workItem from="1603563517854" duration="6388000" />
       <workItem from="1603630845021" duration="6151000" />
-      <workItem from="1603690627172" duration="16998000" />
+      <workItem from="1603690627172" duration="21822000" />
     </task>
     <servers />
   </component>
@@ -192,17 +195,21 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="475" y="60" key="#PHP/0.0.1536.834@0.0.1536.834" timestamp="1603633431955" />
-    <state x="604" y="341" key="NewPhpFileDialog" timestamp="1603702430475">
+    <state x="586" y="162" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1603710630902">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="604" y="341" key="NewPhpFileDialog/0.0.1536.834@0.0.1536.834" timestamp="1603702430475" />
+    <state x="586" y="162" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.834@0.0.1536.834" timestamp="1603710630902" />
+    <state x="604" y="341" key="NewPhpFileDialog" timestamp="1603713669164">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="604" y="341" key="NewPhpFileDialog/0.0.1536.834@0.0.1536.834" timestamp="1603713669164" />
     <state x="425" y="189" key="run.anything.popup" timestamp="1603548132392">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="425" y="189" key="run.anything.popup/0.0.1536.834@0.0.1536.834" timestamp="1603548132392" />
-    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1603566581666">
+    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1603714234750">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup/0.0.1536.834@0.0.1536.834" timestamp="1603566581666" />
+    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup/0.0.1536.834@0.0.1536.834" timestamp="1603714234750" />
   </component>
 </project>

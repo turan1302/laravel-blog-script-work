@@ -16,6 +16,14 @@
 //});
 
 
+
+// ADMIN PANELİ
+Route::group(['prefix'=>'panel','namespace'=>"Back",'as'=>'admin.'],function (){
+    Route::get('','Dashboard@index')->name('index');
+    Route::get('login','Login@index')->name('login');
+});
+
+
 // ÖN PANEL KISMI
 Route::group(['prefix'=>'/','namespace'=>"Front",'as'=>'front.'],function (){
     Route::get('','Homepage@index')->name('index');
@@ -34,3 +42,7 @@ Route::group(['prefix'=>'/','namespace'=>"Front",'as'=>'front.'],function (){
     Route::post('iletisim','Homepage@contactPost')->name('contactPost'); // İLETİŞİM POST METHODUNA GİDER
 
 });
+
+
+
+
