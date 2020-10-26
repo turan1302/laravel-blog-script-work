@@ -23,6 +23,8 @@ Route::group(['prefix'=>'/','namespace'=>"Front",'as'=>'front.'],function (){
     /**
      *  ÖNEMLİ NOT: KAATEGORİYE AİT POSTLAR ROUTE SİNİ ÜSTE ALMAMIZIN SEBEBİ ÇAKIŞMA DURUMUNU ENGELLENEMKTİR :)
      *
+     *  EĞER ALMAMIŞ OLSAYDIK ÖNCE SİNGLE A GİDİP KONTROL YAPACAKTI DOĞRU OLSA BİLE ENGELLEYECEKTİ !!!
+     *
      */
 
     Route::get('/kategori/{category}','Homepage@category')->name('category'); //KATEGORİYE AİT POSTLARI GETİRİR
