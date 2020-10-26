@@ -1,5 +1,6 @@
 @extends('front.layout.content')
-@section('title',$category.' Kategorisi | '.count($articles)." Yazı Bulundu")
+@section('title',$category." Kategorisi")
+@section('category',$category.' Kategorisi | '.count($articles)." Yazı Bulundu")
 @section('content')
     <!-- Main Content -->
     <div class="container">

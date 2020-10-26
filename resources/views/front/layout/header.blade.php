@@ -40,12 +40,11 @@
                 <li class="nav-item">
                     <a class="nav-link" href="index.html">Home</a>
                 </li>
+                @foreach($pages as $page)
                 <li class="nav-item">
-                    <a class="nav-link" href="about.html">About</a>
+                    <a class="nav-link" href="{{route('front.page',$page->slug)}}">{{$page->title}}</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="post.html">Sample Post</a>
-                </li>
+                @endforeach
                 <li class="nav-item">
                     <a class="nav-link" href="contact.html">Contact</a>
                 </li>

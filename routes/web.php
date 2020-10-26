@@ -28,5 +28,7 @@ Route::group(['prefix'=>'/','namespace'=>"Front",'as'=>'front.'],function (){
      */
 
     Route::get('/kategori/{category}','Homepage@category')->name('category'); //KATEGORİYE AİT POSTLARI GETİRİR
+    Route::get('sayfa/{page}','Homepage@page')->name('page'); // SAYFALAR (MISYON,VIZYON KISIMLARI)
     Route::get('{category}/{slug}','Homepage@single')->name('single');  // POST SAYFASINA GİDER
+
 });
