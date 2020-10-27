@@ -19,15 +19,18 @@
 
 // ADMIN PANELİ
 Route::group(['prefix'=>'panel','namespace'=>"Back",'as'=>'admin.'],function (){
-    Route::get('','Dashboard@index')->name('index');
+    // ANA SAYFA
+    Route::get('','Dashboard@index')->name('index')->middleware('auth');
 
-    Route::group(['prefix'=>'login'],function (){
+    // LOGİN İŞLEMİ
+    Route::group(['prefix'=>'login','middleware'=>'isLogin'],function (){
         Route::get('','Login@index')->name('login');
-        Route::post('','Login@login')->name('login');
+        Route::post('','Login@login')->name('login.post');
     });
 
+    // ÇIKIŞ İŞLEMİ
     Route::group(['prefix'=>"logout"],function (){
-        Route::get('','Login@logout')->name('logout');
+        Route::get('','Login@logout')->name('logout')->middleware('auth');
     });
 
 });

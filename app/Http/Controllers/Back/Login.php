@@ -16,12 +16,14 @@ class Login extends Controller
 
     public function login(Request $request)
     {
+        $this->validateData();
+
         $credentials = $request->only('email','password');
 
         if (Auth::attempt($credentials)) {
             return redirect()->route('admin.index');
         } else {
-            return redirect()->back();
+            return redirect()->back()->with("warning","E-Mail Adrresiniz ve/veya Şifreniz Yanlış");
         }
 
     }
