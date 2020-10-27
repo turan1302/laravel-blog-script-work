@@ -22,17 +22,6 @@
     <list default="true" id="5e7424d1-763a-4375-8283-e5ebc3f5c105" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Back/ArticleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Back/ArticleController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Front/Homepage.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Front/Homepage.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Article.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Article.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_10_24_182000_create_articles_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_10_24_182000_create_articles_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/articleImages/mkaalae-asdasas.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/back/articles/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/back/articles/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/back/articles/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/back/articles/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/back/articles/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/back/articles/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/back/layout/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/back/layout/footer.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/front/layout/articleWidget.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/layout/articleWidget.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/front/post.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/post.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -203,7 +192,8 @@
       <workItem from="1603733349315" duration="740000" />
       <workItem from="1603737209625" duration="386000" />
       <workItem from="1603738056113" duration="657000" />
-      <workItem from="1603776990171" duration="30904000" />
+      <workItem from="1603776990171" duration="31386000" />
+      <workItem from="1603816894286" duration="1043000" />
     </task>
     <servers />
   </component>

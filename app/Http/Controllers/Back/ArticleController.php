@@ -6,7 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\Article;
 use App\Models\Category;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Facades\File;
 use Illuminate\Support\Str;
 
 class ArticleController extends Controller
@@ -30,7 +30,6 @@ class ArticleController extends Controller
     public function create()
     {
         $categories = Category::all();
-
         return view('back.articles.create', compact('categories'));
     }
 
@@ -96,7 +95,10 @@ class ArticleController extends Controller
         $data = $this->validateData();
 
         if ($request->file('image')){
-            @unlink($article->image);  // resmi silelim
+
+            if (File::exists($article->image))
+                File::delete(public_path($article->image));
+
             $file = $request->file('image');
             $file_name = Str::slug($data['title']) . "." . $file->getClientOriginalExtension();
             $file->move('articleImages', $file_name);  // MOVE DEDİM PUBLİC İ.İNDE DOSYA OLUŞTURUP OORADAN ERĞ
@@ -130,7 +132,10 @@ class ArticleController extends Controller
 
     public function hardDelete($id){
         $article = Article::onlyTrashed()->find($id);
-        @unlink($article->image);
+
+        if (File::exists($article->image))
+            File::delete(public_path($article->image));
+
         $article->forceDelete();
     }
 
