@@ -20,8 +20,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5e7424d1-763a-4375-8283-e5ebc3f5c105" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/laravel-fg-blog.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/laravel-fg-blog.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Back/Login.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Back/Login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/bootstrap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/back/layout/navbar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/back/layout/navbar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/back/login_layout/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/back/login_layout/login.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,6 +141,7 @@
       <path value="$PROJECT_DIR$/vendor/facade/ignition" />
       <path value="$PROJECT_DIR$/vendor/psy/psysh" />
       <path value="$PROJECT_DIR$/vendor/phpoption/phpoption" />
+      <path value="$PROJECT_DIR$/vendor/laravel/ui" />
     </include_path>
   </component>
   <component name="ProjectId" id="1jKCITf1CYnmmyPqooyCx4LzFbC" />
@@ -138,13 +152,16 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../laravel-7" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\xampp\htdocs\laravel-fg-blog\resources\views\back\login_layout" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\xampp\htdocs\laravel-fg-blog\app\Http\Controllers\Back" />
     </key>
   </component>
   <component name="RunManager" selected="PHP Script.Homepage.php">
@@ -172,7 +189,11 @@
       <workItem from="1603543318003" duration="7977000" />
       <workItem from="1603563517854" duration="6388000" />
       <workItem from="1603630845021" duration="6151000" />
-      <workItem from="1603690627172" duration="21822000" />
+      <workItem from="1603690627172" duration="30329000" />
+      <workItem from="1603733349315" duration="740000" />
+      <workItem from="1603737209625" duration="386000" />
+      <workItem from="1603738056113" duration="657000" />
+      <workItem from="1603776990171" duration="973000" />
     </task>
     <servers />
   </component>
@@ -189,6 +210,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="475" y="60" key="#PHP" timestamp="1603633431955">
@@ -199,6 +221,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="586" y="162" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.834@0.0.1536.834" timestamp="1603710630902" />
+    <state x="549" y="172" key="FileChooserDialogImpl" timestamp="1603737309577">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="549" y="172" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1603737309577" />
     <state x="604" y="341" key="NewPhpFileDialog" timestamp="1603713669164">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -207,9 +233,9 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="425" y="189" key="run.anything.popup/0.0.1536.834@0.0.1536.834" timestamp="1603548132392" />
-    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1603714234750">
+    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1603733670079">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup/0.0.1536.834@0.0.1536.834" timestamp="1603714234750" />
+    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup/0.0.1536.834@0.0.1536.834" timestamp="1603733670079" />
   </component>
 </project>

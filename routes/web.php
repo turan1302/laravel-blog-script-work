@@ -12,7 +12,7 @@
 */
 
 //Route::get('/',function (){
-//    return view('front.index');
+//    return view('home');
 //});
 
 
@@ -20,7 +20,16 @@
 // ADMIN PANELİ
 Route::group(['prefix'=>'panel','namespace'=>"Back",'as'=>'admin.'],function (){
     Route::get('','Dashboard@index')->name('index');
-    Route::get('login','Login@index')->name('login');
+
+    Route::group(['prefix'=>'login'],function (){
+        Route::get('','Login@index')->name('login');
+        Route::post('','Login@login')->name('login');
+    });
+
+    Route::group(['prefix'=>"logout"],function (){
+        Route::get('','Login@logout')->name('logout');
+    });
+
 });
 
 
@@ -46,3 +55,11 @@ Route::group(['prefix'=>'/','namespace'=>"Front",'as'=>'front.'],function (){
 
 
 
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
