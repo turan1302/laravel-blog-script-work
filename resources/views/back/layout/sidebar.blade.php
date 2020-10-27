@@ -19,7 +19,7 @@
                          data-parent="#sidenavAccordion">
                         <nav class="sb-sidenav-menu-nested nav">
                             <a class="nav-link" href="{{route('admin.article.index')}}">Tüm Makaleler</a>
-                            <a class="nav-link" href="layout-sidenav-light.html">Makale Oluştur</a>
+                            <a class="nav-link" href="{{route('admin.article.create')}}">Makale Oluştur</a>
                         </nav>
                     </div>
                     <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages"

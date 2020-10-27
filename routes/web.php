@@ -36,6 +36,8 @@ Route::group(['prefix'=>'panel','namespace'=>"Back",'as'=>'admin.'],function (){
     // MAKALELER
     Route::group(['prefix'=>'article','middleware'=>'auth','as'=>'article.'],function (){
         Route::get('','ArticleController@index')->name('index');
+        Route::post('','ArticleController@store')->name('store');
+        Route::get('/create','ArticleController@create')->name('create');
     });
 
 });

@@ -4,9 +4,9 @@
             <h2 class="post-title">
                 {{$article->title}}
             </h2>
-            <img src="{{$article->image}}" alt="{{$article->title}}">
+            <img width="600" height="300" src="{{$article->image}}" alt="{{$article->title}}">
             <h3 class="post-subtitle">
-                {{\Illuminate\Support\Str::words($article->text."..",20)}}
+                {{strip_tags(\Illuminate\Support\Str::words($article->text."..",20))}}
             </h3>
         </a>
         <p class="post-meta">Kategori:

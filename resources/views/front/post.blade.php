@@ -1,6 +1,6 @@
 @extends('front.layout.content')
 @section('title',$blog->title)
-@section('bg',$blog->image)
+@section('bg',asset($blog->image))
 @section('content')
     <!-- POST -->
     <article>

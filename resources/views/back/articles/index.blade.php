@@ -12,7 +12,8 @@
                 <div class="card mb-4">
                     <div class="card-header">
                         <i class="fas fa-table mr-1"></i>
-                        DataTable Example
+                        Makaleleriniz
+                        <a href="{{route('admin.article.create')}}" class="btn btn-success btn-sm float-right"><i class="fa fa-plus"></i> Yeni Ekle</a>
                     </div>
                     <div class="card-body">
                         <div class="table-responsive">
@@ -33,7 +34,7 @@
                                 @forelse($articles as $item)
                                     <tr>
                                         <td>{{$item->id}}</td>
-                                        <td><img width="100" height="100" src="{{$item->image}}" alt="{{$item->title}}">
+                                        <td><img width="100" height="100" src="{{asset($item->image)}}" alt="{{$item->title}}">
                                         </td>
                                         <td>{{$item->title}}</td>
                                         <td>{{$item->categories->name}}</td>

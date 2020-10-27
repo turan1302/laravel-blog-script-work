@@ -14,4 +14,12 @@
     <!-- TOGGLE CSS -->
     <link rel="stylesheet" href="{{asset('back/dist')}}/css/toggle.css">
 
+    <!-- SUMMERNOTE CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet">
+
+    <!-- IZITOAST CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/css/iziToast.min.css" type="text/css">
+
+    @toastr_css
+
 </head>

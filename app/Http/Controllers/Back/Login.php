@@ -21,6 +21,7 @@ class Login extends Controller
         $credentials = $request->only('email','password');
 
         if (Auth::attempt($credentials)) {
+            toastr()->success("Tekrar Hoşgeldin ".\auth()->user()->name,"Giriş Başarılı");
             return redirect()->route('admin.index');
         } else {
             return redirect()->back()->with("warning","E-Mail Adrresiniz ve/veya Şifreniz Yanlış");
@@ -30,6 +31,7 @@ class Login extends Controller
 
     public function logout(){
         Auth::logout(); // çıkış yap dedik
+        toastr()->success("Çıkış Başarıyla Yapıldı","Başarılı");
         return redirect()->route('admin.login'); // yönlendirdik
     }
 

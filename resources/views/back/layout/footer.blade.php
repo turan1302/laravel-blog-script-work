@@ -21,5 +21,21 @@
 <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js" crossorigin="anonymous"></script>
 <script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js" crossorigin="anonymous"></script>
 <script src="{{asset('back/dist')}}/assets/demo/datatables-demo.js"></script>
+
+<!-- SUMMERNOTE JS -->
+<script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js"></script>
+
+<!-- SUMMERNOTE JS EKLENTİSİ -->
+<script src="{{asset('back/dist')}}/js/summernote.js"></script>
+
+<!-- IZITOAST JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/js/iziToast.min.js"></script>
+
+<!-- ALERT PHP -->
+@include('back.layout.alert')
+
+@toastr_js
+@toastr_render
+
 </body>
 </html>
