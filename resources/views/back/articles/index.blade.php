@@ -34,21 +34,26 @@
                                 @forelse($articles as $item)
                                     <tr>
                                         <td>{{$item->id}}</td>
-                                        <td><img width="100" height="100" src="{{asset($item->image)}}" alt="{{$item->title}}">
+                                        <td>
+                                            @if(file_exists($item->image))
+                                                <img src="{{asset($item->image)}}" width="100" height="100" alt="{{$item->title}}">
+                                            @else
+                                                <img src="{{asset('articleImages')}}/resim-yok.png" width="100" height="100" alt="">
+                                            @endif
                                         </td>
                                         <td>{{$item->title}}</td>
                                         <td>{{$item->categories->name}}</td>
                                         <td>{{$item->hit}}</td>
                                         <td>
                                             <label class="switch">
-                                                <input type="checkbox" {{($item->status==1) ? 'checked':''}}>
+                                                <input type="checkbox" class="isActive" data-url="{{route('admin.article.switch',$item->id)}}" {{($item->status==1) ? 'checked':''}}>
                                                 <span class="slider"></span>
                                             </label>
                                         </td>
                                         <td>{{$item->created_at}}</td>
                                         <td>
                                             <a href="" title="Görüntüle" class="btn btn-warning btn-sm"><i class="fa fa-eye"></i></a>
-                                            <a href="" title="Düzenle" class="btn btn-info btn-sm"><i class="fa fa-pen-square"></i></a>
+                                            <a href="{{route('admin.article.edit',$item->id)}}" title="Düzenle" class="btn btn-info btn-sm"><i class="fa fa-pen-square"></i></a>
                                             <a href="" title="Sil" class="btn btn-danger btn-sm"><i class="fa fa-trash"></i></a>
                                         </td>
                                     </tr>

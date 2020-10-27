@@ -37,5 +37,20 @@
 @toastr_js
 @toastr_render
 
+<script>
+    $(".isActive").click(function (){
+
+        var token = "{{csrf_token()}}"
+        var data = $(this).prop("checked");
+        var data_url = $(this).data("url");
+
+        $.post(data_url,{
+            data : data,
+            _token : token
+        });
+
+    });
+</script>
+
 </body>
 </html>

@@ -38,6 +38,13 @@ Route::group(['prefix'=>'panel','namespace'=>"Back",'as'=>'admin.'],function (){
         Route::get('','ArticleController@index')->name('index');
         Route::post('','ArticleController@store')->name('store');
         Route::get('/create','ArticleController@create')->name('create');
+
+        Route::group(['prefix'=>'{article}'],function (){
+            Route::get('edit','ArticleController@edit')->name('edit');
+            Route::post('switch','ArticleController@switch')->name('switch');  // aktiflik pasiflik için bunu ayarladık
+            Route::patch('','ArticleController@update')->name('update');
+        });
+
     });
 
 });

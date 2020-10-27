@@ -76,9 +76,10 @@ class ArticleController extends Controller
      * @param int $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Article $article)
     {
-        //
+        $categories = Category::all();
+        return view('back.articles.edit',compact('article','categories'));
     }
 
     /**
@@ -88,9 +89,31 @@ class ArticleController extends Controller
      * @param int $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, Article $article)
     {
-        //
+
+        $data = $this->validateData();
+
+        if ($request->file('image')){
+            @unlink($article->image);  // resmi silelim
+            $file = $request->file('image');
+            $file_name = Str::slug($data['title']) . "." . $file->getClientOriginalExtension();
+            $file->move('articleImages', $file_name);  // MOVE DEDİM PUBLİC İ.İNDE DOSYA OLUŞTURUP OORADAN ERĞ
+            $data['image'] = "articleImages/" . $file_name;
+        }
+
+
+        $article->update($data);
+        toastr()->success("Makale Güncelleme İşlemi Başarılı","Başarılı");
+        return redirect()->back();
+
+    }
+
+    public function switch(Request $request,Article $article){
+        $data = ($request->data=="true") ? 1 : 0;
+        $article->update(array(
+            "status"=>$data
+        ));
     }
 
     /**
