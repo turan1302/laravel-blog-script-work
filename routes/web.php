@@ -37,12 +37,15 @@ Route::group(['prefix'=>'panel','namespace'=>"Back",'as'=>'admin.'],function (){
     Route::group(['prefix'=>'article','middleware'=>'auth','as'=>'article.'],function (){
         Route::get('','ArticleController@index')->name('index');
         Route::post('','ArticleController@store')->name('store');
-        Route::get('/create','ArticleController@create')->name('create');
-
+        Route::get('create','ArticleController@create')->name('create');
+        Route::get('geri-donusum','ArticleController@trashed')->name('trashed');  // silinen makaleleri görecceğiz
+        Route::get('geri-al/{id}','ArticleController@recover')->name('recover');
+        Route::post('kalici-sil/{id}','ArticleController@hardDelete')->name('hardDelete'); // kalıcı olarak sil dedik
         Route::group(['prefix'=>'{article}'],function (){
             Route::get('edit','ArticleController@edit')->name('edit');
             Route::post('switch','ArticleController@switch')->name('switch');  // aktiflik pasiflik için bunu ayarladık
             Route::patch('','ArticleController@update')->name('update');
+            Route::delete('','ArticleController@destroy')->name('delete');
         });
 
     });

@@ -1,5 +1,5 @@
 @extends('back.layout.content')
-@section('title','Panel')
+@section('title','Makale Düzenle')
 @section('content')
 
     <div id="layoutSidenav_content">

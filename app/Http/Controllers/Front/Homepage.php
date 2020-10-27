@@ -23,7 +23,7 @@ class Homepage extends Controller
     public function index()
     {
         $data = [
-            "articles" => Article::orderBy('id', 'desc')->paginate(2),
+            "articles" => Article::where('status','1')->orderBy('id', 'desc')->paginate(2),
         ];
 
         return view('front.index', $data);

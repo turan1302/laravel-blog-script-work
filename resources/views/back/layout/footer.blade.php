@@ -31,26 +31,16 @@
 <!-- IZITOAST JS -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/js/iziToast.min.js"></script>
 
+<!-- SWEET ALERT -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
 <!-- ALERT PHP -->
 @include('back.layout.alert')
 
 @toastr_js
 @toastr_render
 
-<script>
-    $(".isActive").click(function (){
-
-        var token = "{{csrf_token()}}"
-        var data = $(this).prop("checked");
-        var data_url = $(this).data("url");
-
-        $.post(data_url,{
-            data : data,
-            _token : token
-        });
-
-    });
-</script>
+@include('back.layout.custom')
 
 </body>
 </html>

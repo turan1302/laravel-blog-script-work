@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\Article;
 use App\Models\Category;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
 
 class ArticleController extends Controller
@@ -17,7 +18,7 @@ class ArticleController extends Controller
      */
     public function index()
     {
-        $articles = Article::all();
+        $articles = Article::orderBy('id','desc')->get();
         return view('back.articles.index', compact('articles'));
     }
 
@@ -122,9 +123,26 @@ class ArticleController extends Controller
      * @param int $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Article $article)
     {
-        //
+        $article->delete();
+    }
+
+    public function hardDelete($id){
+        $article = Article::onlyTrashed()->find($id);
+        @unlink($article->image);
+        $article->forceDelete();
+    }
+
+    public function trashed(){
+        $articles = Article::onlyTrashed()->orderBy('created_at','desc')->get();  // silinenleri (softDelete) bu şekilde alıyoruz
+        return view('back.articles.trashed', compact('articles'));
+    }
+
+    public function recover($id){
+        Article::onlyTrashed()->find($id)->restore(); // SİLİNEN VERİYİ GERİ ALDIK
+        toastr()->success('Makale Yazısı Geri Alındı','Başarılı');
+        return redirect()->back();
     }
 
     public function validateData()

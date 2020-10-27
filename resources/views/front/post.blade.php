@@ -10,7 +10,7 @@
                 @include('front.layout.categoryWidget')
 
                 <div class="col-md-9 mx-auto">
-                   {{$blog->text}}
+                   {{strip_tags($blog->text)}}
                     <p></p>
                     <span class="text-red align-content-end">Okunma Sayısı: <b>{{$blog->hit}}</b></span>
                 </div>
