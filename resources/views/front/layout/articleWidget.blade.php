@@ -4,6 +4,7 @@
             <h2 class="post-title">
                 {{$article->title}}
             </h2>
+            <img src="{{$article->image}}" alt="{{$article->title}}">
             <h3 class="post-subtitle">
                 {{\Illuminate\Support\Str::words($article->text."..",20)}}
             </h3>

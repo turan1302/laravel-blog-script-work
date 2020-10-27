@@ -21,6 +21,7 @@ class CreateArticlesTable extends Migration
             $table->string('slug');
             $table->text('text');
             $table->integer('hit')->default(0);
+            $table->integer('status')->default(0)->comment('0 ise pasif 1 ise aktif');
            // $table->foreign('category_id')->references('id')->on('categories'); // İLİŞKİ İÇİN BU LAZIM :)
             $table->timestamps();
         });

@@ -33,6 +33,11 @@ Route::group(['prefix'=>'panel','namespace'=>"Back",'as'=>'admin.'],function (){
         Route::get('','Login@logout')->name('logout')->middleware('auth');
     });
 
+    // MAKALELER
+    Route::group(['prefix'=>'article','middleware'=>'auth','as'=>'article.'],function (){
+        Route::get('','ArticleController@index')->name('index');
+    });
+
 });
 
 

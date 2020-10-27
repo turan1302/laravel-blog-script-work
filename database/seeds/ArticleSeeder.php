@@ -18,9 +18,10 @@ class ArticleSeeder extends Seeder
             DB::table('articles')->insert(array(
                 "category_id"=>rand(1,3),
                 "title"=>$fake->title,
-                "image"=>$fake->imageUrl(300, 300, 'cats', true),
+                "image"=>$fake->imageUrl(600, 300, 'sports', true),
                 "slug"=>$fake->slug,
                 "text"=>$fake->text,
+                "status"=>rand(0,1)
 
             ));
         }

@@ -12,7 +12,7 @@ class AdminSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('admins')->insert(array(
+        DB::table('users')->insert(array(
             "name"=>"Muhammed Fatih",
             "email"=>"m.fatihbagcivan@hotmail.com",
             "password"=>bcrypt(10203040)
