@@ -17,6 +17,7 @@ class CreateCategoriesTable extends Migration
             $table->bigIncrements('id');
             $table->string('name');
             $table->string('slug');
+            $table->integer('status')->default(0)->comment('0 ise pasif 1 ise aktif');
             $table->timestamps();
         });
     }

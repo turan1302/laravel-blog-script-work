@@ -43,7 +43,7 @@ class Homepage extends Controller
 
         $data = [
             // KAYIT YOKSA EKSANA HATA BASTIRACAK (404)
-            "blog" => $blog ?? abort(404, 'Kayıt Bulunamadı'),
+            "blog" => $blog ?? abort(403, 'Kayıt Bulunamadı'),
         ];
 
         return view('front.post', $data);

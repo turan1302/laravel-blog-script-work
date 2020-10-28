@@ -50,6 +50,16 @@ Route::group(['prefix'=>'panel','namespace'=>"Back",'as'=>'admin.'],function (){
 
     });
 
+    // KATEGORİLER
+    Route::group(['prefix'=>'category','middleware'=>'auth','as'=>'category.'],function (){
+        Route::get('','CategoryController@index')->name('index');
+        Route::get('create','CategoryController@create')->name('create');
+        Route::post('','CategoryController@store')->name('store');
+        Route::group(['prefix'=>'{category}'],function (){
+            Route::post('switch','CategoryController@switch')->name('switch');
+        });
+    });
+
 });
 
 
@@ -79,7 +89,5 @@ Route::group(['prefix'=>'/','namespace'=>"Front",'as'=>'front.'],function (){
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-
-Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

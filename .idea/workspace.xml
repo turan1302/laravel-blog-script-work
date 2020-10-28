@@ -21,7 +21,12 @@
   <component name="ChangeListManager">
     <list default="true" id="5e7424d1-763a-4375-8283-e5ebc3f5c105" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Back/ArticleController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Back/ArticleController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Front/Homepage.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Front/Homepage.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Category.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_10_24_141456_create_categories_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_10_24_141456_create_categories_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/back/articles/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/back/articles/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/back/layout/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/back/layout/sidebar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -155,12 +160,12 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\xampp\htdocs\laravel-fg-blog\app\Http\Controllers\Back" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\xampp\htdocs\laravel-fg-blog\public\back\dist\css" />
       <recent name="D:\xampp\htdocs\laravel-fg-blog\resources\views\back\login_layout" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\xampp\htdocs\laravel-fg-blog\app\Http\Controllers\Back" />
     </key>
   </component>
   <component name="RunManager" selected="PHP Script.Homepage.php">
@@ -193,7 +198,8 @@
       <workItem from="1603737209625" duration="386000" />
       <workItem from="1603738056113" duration="657000" />
       <workItem from="1603776990171" duration="31386000" />
-      <workItem from="1603816894286" duration="1043000" />
+      <workItem from="1603816894286" duration="1397000" />
+      <workItem from="1603863388408" duration="3776000" />
     </task>
     <servers />
   </component>
@@ -225,17 +231,17 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="549" y="172" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1603737309577" />
-    <state x="604" y="341" key="NewPhpFileDialog" timestamp="1603806650765">
+    <state x="604" y="341" key="NewPhpFileDialog" timestamp="1603865412116">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="604" y="341" key="NewPhpFileDialog/0.0.1536.834@0.0.1536.834" timestamp="1603806650765" />
-    <state x="425" y="189" key="run.anything.popup" timestamp="1603785192065">
+    <state x="604" y="341" key="NewPhpFileDialog/0.0.1536.834@0.0.1536.834" timestamp="1603865412116" />
+    <state x="425" y="189" key="run.anything.popup" timestamp="1603865819762">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="425" y="189" key="run.anything.popup/0.0.1536.834@0.0.1536.834" timestamp="1603785192065" />
-    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1603809713237">
+    <state x="425" y="189" key="run.anything.popup/0.0.1536.834@0.0.1536.834" timestamp="1603865819762" />
+    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1603865059801">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup/0.0.1536.834@0.0.1536.834" timestamp="1603809713237" />
+    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup/0.0.1536.834@0.0.1536.834" timestamp="1603865059801" />
   </component>
 </project>

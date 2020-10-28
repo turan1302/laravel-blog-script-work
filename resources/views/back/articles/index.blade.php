@@ -56,7 +56,7 @@
                                         </td>
                                         <td>{{$item->created_at}}</td>
                                         <td>
-                                            <a href="" title="Görüntüle" class="btn btn-warning btn-sm"><i class="fa fa-eye"></i></a>
+                                            <a target="_blank" href="{{route('front.single',[$item->categories->slug,$item->slug])}}" title="Görüntüle" class="btn btn-warning btn-sm"><i class="fa fa-eye"></i></a>
                                             <a href="{{route('admin.article.edit',$item->id)}}" title="Düzenle" class="btn btn-info btn-sm"><i class="fa fa-pen-square"></i></a>
                                             <button type="button" data-url="{{route('admin.article.delete',$item->id)}}" class="btn btn-danger btn-sm isDelete" ><i class="fa fa-trash"></i></button>
 
