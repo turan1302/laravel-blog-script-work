@@ -69,6 +69,7 @@ Route::group(['prefix'=>'panel','namespace'=>"Back",'as'=>'admin.'],function (){
         Route::get('create','PageController@create')->name('create');
         Route::get('geri-donusum','PageController@trashed')->name('trashed');
         Route::get('geri-al/{id}','PageController@recover')->name('recover');
+        Route::post('sirala','PageController@rank')->name('rank');
         Route::post('kalici-sil/{id}','PageController@hardDelete')->name('hardDelete');
         Route::group(['prefix'=>'{page}'],function (){
             Route::patch('','PageController@update')->name('update');

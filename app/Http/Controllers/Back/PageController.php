@@ -17,7 +17,7 @@ class PageController extends Controller
      */
     public function index()
     {
-        $pages = Page::all();
+        $pages = Page::orderBy('order','asc')->get();
         return view('back.pages.index',compact('pages'));
     }
 
@@ -150,6 +150,17 @@ class PageController extends Controller
         if (File::exists($data->image))
             File::delete(public_path($data->image));
         $data->forceDelete();
+    }
+
+    public function rank(Request $request){
+        parse_str($request->data,$data);
+        $rank = $data['sirala'];
+
+        foreach ($rank as $key => $value){
+            Page::where('id',$value)->update(array(
+                "order"=>$key
+            ));
+        }
     }
 
     public function validateData(){

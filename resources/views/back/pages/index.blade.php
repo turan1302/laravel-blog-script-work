@@ -35,10 +35,10 @@
                                     <th>İşlemler</th>
                                 </tr>
                                 </thead>
-                                <tbody>
+                                <tbody  class="sortable" data-url="{{route('admin.page.rank')}}">
                                 @forelse($pages as $item)
-                                    <tr>
-                                        <td class="fa fa-bars"></td>
+                                    <tr id="sirala-{{$item->id}}">
+                                        <td style="cursor: move;" class="fa fa-bars"></td>
                                         <td>{{$item->id}}</td>
                                         <td>
                                             @if(\Illuminate\Support\Facades\File::exists($item->image))

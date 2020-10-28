@@ -20,17 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5e7424d1-763a-4375-8283-e5ebc3f5c105" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/pageImages/resim-yok.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Back/PageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Back/PageController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Front/Homepage.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Front/Homepage.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Page.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Page.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_10_26_070620_create_pages_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_10_26_070620_create_pages_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/back/articles/trashed.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/back/articles/trashed.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/back/category/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/back/category/create.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/back/layout/custom.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/back/layout/custom.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/back/layout/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/back/layout/footer.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/back/pages/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/back/pages/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/front/page.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/page.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -205,7 +199,7 @@
       <workItem from="1603738056113" duration="657000" />
       <workItem from="1603776990171" duration="31386000" />
       <workItem from="1603816894286" duration="1397000" />
-      <workItem from="1603863388408" duration="19722000" />
+      <workItem from="1603863388408" duration="21841000" />
     </task>
     <servers />
   </component>
