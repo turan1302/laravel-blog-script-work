@@ -37,6 +37,20 @@
                         </nav>
                     </div>
 
+                    <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#sayfalar"
+                       aria-expanded="false" aria-controls="collapseLayouts">
+                        <div class="sb-nav-link-icon"><i class="fa fa-pager"></i></div>
+                        Sayfalar
+                        <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                    </a>
+                    <div class="collapse" id="sayfalar" aria-labelledby="headingOne"
+                         data-parent="#sidenavAccordion">
+                        <nav class="sb-sidenav-menu-nested nav">
+                            <a class="nav-link" href="{{route('admin.page.index')}}">Tüm Sayfalar</a>
+                            <a class="nav-link" href="{{route('admin.category.create')}}">Sayfa Oluştur</a>
+                        </nav>
+                    </div>
+
                     <div class="sb-sidenav-menu-heading">Addons</div>
                     <a class="nav-link" href="charts.html">
                         <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>

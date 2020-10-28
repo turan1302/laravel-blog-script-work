@@ -20,6 +20,7 @@ class CreatePagesTable extends Migration
             $table->text('content');
             $table->string('slug');
             $table->integer('order');
+            $table->integer('status')->default(0)->comment("0 ise pasif 1 ise aktif");
             $table->timestamps();
         });
     }

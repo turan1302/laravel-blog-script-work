@@ -62,6 +62,14 @@ Route::group(['prefix'=>'panel','namespace'=>"Back",'as'=>'admin.'],function (){
         });
     });
 
+    // SAYFALAR
+    Route::group(['prefix'=>'page','middleware'=>'auth','as'=>'page.'],function (){
+        Route::get('','PageController@index')->name('index');
+        Route::group(['prefix'=>'{page}'],function (){
+            Route::post('switch','PageController@switch')->name('switch');
+        });
+    });
+
 });
 
 
