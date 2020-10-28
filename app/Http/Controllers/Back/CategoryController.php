@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Back;
 
 use App\Http\Controllers\Controller;
+use App\Models\Article;
 use App\Models\Category;
 use Illuminate\Http\Request;
 
@@ -95,9 +96,13 @@ class CategoryController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Request $request,Category $category)
     {
-        //
+        if ($request->article_count>0){
+            Article::where("category_id",$category->id)->update(["category_id"=>1]);
+        }
+        toastr()->success("Kategori Başarıyla Silindi","Başarılı");
+        $category->delete();
     }
 
     public function validateData(){

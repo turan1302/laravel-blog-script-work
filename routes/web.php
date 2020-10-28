@@ -58,6 +58,7 @@ Route::group(['prefix'=>'panel','namespace'=>"Back",'as'=>'admin.'],function (){
         Route::group(['prefix'=>'{category}'],function (){
             Route::post('switch','CategoryController@switch')->name('switch');
             Route::patch('','CategoryController@update')->name('update');
+            Route::delete('','CategoryController@destroy')->name('delete');
         });
     });
 

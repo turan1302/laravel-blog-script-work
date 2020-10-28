@@ -13,7 +13,7 @@
         });
     });
 
-    /** SİLME KISMI */
+    /** SİLME KISMI (ARTİCLE) */
     $(".isDelete").click(function (){
 
         var data_url = $(this).data("url");
@@ -42,6 +42,42 @@
             }
         })
     });
+
+
+    /** SİLME KISMI (CATEGORY) */
+    $(".isDeleteCategory").click(function (){
+        var data_url = $(this).data("url");
+        var article_count = $(this).attr("article-count");
+        var alert_message = (article_count>0) ? "(Bu kategoriye ait "+article_count+" Adet Yazı var!!!)":'';
+
+
+        Swal.fire({
+            title: 'Dikkat',
+            text: "Kayıt Silinecektir. Onaylıyor Musunuz ? "+alert_message,
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Evet! Kaydı Sil',
+            cancelButtonText : 'Vazgeç'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                $.ajax({
+                    url : data_url,
+                    type : "DELETE",
+                    data : {
+                        _token : "{{csrf_token()}}",  // CSRF İÇİN BU GEREKLİ
+                        article_count : article_count
+                    },
+                    success : function (response){
+                        window.location.href="{{route('admin.category.index')}}";
+                    }
+                });
+            }
+        })
+
+    });
+
 
     /** KALICI SİLME KISMI */
     $(".isHardDelete").click(function (){

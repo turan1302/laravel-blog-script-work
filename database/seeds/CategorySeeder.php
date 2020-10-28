@@ -15,7 +15,7 @@ class CategorySeeder extends Seeder
     {
 
         $category = array(
-            "Hayat","Teknoloji","Yazılım"
+            "Genel","Hayat","Teknoloji","Yazılım"
         );
 
         foreach($category as $item){
