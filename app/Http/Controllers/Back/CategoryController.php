@@ -75,9 +75,11 @@ class CategoryController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, Category $category)
     {
-        //
+        $category->update($this->validateData());
+        toastr()->success("Kategori Başarıyla Güncellendi","Başarılı");
+        return redirect()->back();
     }
 
     public function switch(Request $request,Category $category){

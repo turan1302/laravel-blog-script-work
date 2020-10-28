@@ -16,8 +16,8 @@ class Homepage extends Controller
     {
         /** PAGES VE CATEGORİES ÇOĞU SAYFADA OLDUĞU İÇİN SÜREKLİ KOD TEKRARINDAN KAÇINARAK UFAK BİR KOD YAZALIM */
 
-        view()->share("pages",Page::orderBy('order','asc')->get());  /** PAGES DEĞİŞKENİNİ GÖNDERDİK */
-        view()->share("categories",Category::inRandomOrder()->get()); /** CATEGORİES DEĞİŞKENİNİ GÖNDERDİK */
+        view()->share("pages",Page::orderBy('order','asc')->get());  /** PAGES DEĞİŞKENİNİ TÜM SAYFALARA GÖNDERDİK */
+        view()->share("categories",Category::inRandomOrder()->get()); /** CATEGORİES DEĞİŞKENİNİ TÜM SAYFALARA GÖNDERDİK */
     }
 
     public function index()
