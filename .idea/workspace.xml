@@ -21,11 +21,8 @@
   <component name="ChangeListManager">
     <list default="true" id="5e7424d1-763a-4375-8283-e5ebc3f5c105" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Back/PageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Back/PageController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/back/layout/custom.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/back/layout/custom.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/back/layout/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/back/layout/footer.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/back/pages/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/back/pages/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Front/Homepage.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Front/Homepage.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/front/layout/articleWidget.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/layout/articleWidget.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -160,6 +157,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\xampp\htdocs\laravel-fg-blog\resources\views\front\mail" />
       <recent name="D:\xampp\htdocs\laravel-fg-blog\public\back\dist\css" />
       <recent name="D:\xampp\htdocs\laravel-fg-blog\resources\views\back\login_layout" />
     </key>
@@ -199,7 +197,7 @@
       <workItem from="1603738056113" duration="657000" />
       <workItem from="1603776990171" duration="31386000" />
       <workItem from="1603816894286" duration="1397000" />
-      <workItem from="1603863388408" duration="21841000" />
+      <workItem from="1603863388408" duration="25951000" />
     </task>
     <servers />
   </component>
@@ -231,14 +229,14 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="549" y="172" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1603737309577" />
-    <state x="604" y="341" key="NewPhpFileDialog" timestamp="1603883796295">
+    <state x="604" y="341" key="NewPhpFileDialog" timestamp="1603888391216">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="604" y="341" key="NewPhpFileDialog/0.0.1536.834@0.0.1536.834" timestamp="1603883796295" />
-    <state x="425" y="189" key="run.anything.popup" timestamp="1603865819762">
+    <state x="604" y="341" key="NewPhpFileDialog/0.0.1536.834@0.0.1536.834" timestamp="1603888391216" />
+    <state x="425" y="189" key="run.anything.popup" timestamp="1603891212692">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="425" y="189" key="run.anything.popup/0.0.1536.834@0.0.1536.834" timestamp="1603865819762" />
+    <state x="425" y="189" key="run.anything.popup/0.0.1536.834@0.0.1536.834" timestamp="1603891212692" />
     <state x="431" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1603884170007">
       <screen x="0" y="0" width="1536" height="834" />
     </state>

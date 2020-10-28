@@ -5,7 +5,7 @@
                 {{$article->title}}
             </h2>
             @if(file_exists($article->image))
-                <img width="600" height="300" src="{{$article->image}}" alt="{{$article->title}}">
+                <img width="600" height="300" src="{{asset($article->image)}}" alt="{{$article->title}}">
             @else
                 <img src="{{asset('articleImages')}}/resim-yok.png" width="600" height="300" alt="">
             @endif

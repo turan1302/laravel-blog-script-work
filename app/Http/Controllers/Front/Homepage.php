@@ -8,6 +8,7 @@ use App\Models\Category;
 use App\Models\Contact;
 use App\Models\Page;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 
 class Homepage extends Controller
 {
@@ -74,7 +75,16 @@ class Homepage extends Controller
     }
 
     public function contactPost(Request $request){
+
+        $data=$this->validateData();
+        $data['mesaj']=$request->message;   /** BURADA MESAJ DİYE İNDİS OLUŞTURMAMIZIN SEBEBİ LARAVEL İÇERİSİNDE ÇAKIŞMA DURUMUNDAN DOLAYIDIR */
         Contact::create($this->validateData());
+        $email = "m.fatihbagcivan@hotmail.com";
+
+        Mail::send('front.mail.mail',$data,function ($message) use ($email){
+            $message->subject("Yeni Mesajınız Var");
+            $message->to($email);
+        });
         return redirect()->back()->with("contact","Mesajınız Başarıyla Gönderilmiştir. Size en kısa zamanda döneceğiz");
     }
 
