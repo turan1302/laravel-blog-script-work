@@ -20,10 +20,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5e7424d1-763a-4375-8283-e5ebc3f5c105" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/public/pageImages/resim-yok.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Back/PageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Back/PageController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Front/Homepage.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Front/Homepage.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/Page.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Page.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/migrations/2020_10_26_070620_create_pages_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_10_26_070620_create_pages_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/back/layout/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/back/layout/sidebar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/back/articles/trashed.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/back/articles/trashed.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/back/category/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/back/category/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/back/layout/custom.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/back/layout/custom.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/back/pages/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/back/pages/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/front/page.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/front/page.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -152,7 +159,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../laravel-7" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/pageImages" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -163,6 +170,7 @@
       <recent name="D:\xampp\htdocs\laravel-fg-blog\resources\views\back\login_layout" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\xampp\htdocs\laravel-fg-blog\public\pageImages" />
       <recent name="D:\xampp\htdocs\laravel-fg-blog\app\Http\Controllers\Back" />
     </key>
   </component>
@@ -197,7 +205,7 @@
       <workItem from="1603738056113" duration="657000" />
       <workItem from="1603776990171" duration="31386000" />
       <workItem from="1603816894286" duration="1397000" />
-      <workItem from="1603863388408" duration="12413000" />
+      <workItem from="1603863388408" duration="19722000" />
     </task>
     <servers />
   </component>
@@ -229,17 +237,17 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="549" y="172" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1603737309577" />
-    <state x="604" y="341" key="NewPhpFileDialog" timestamp="1603873127028">
+    <state x="604" y="341" key="NewPhpFileDialog" timestamp="1603883796295">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="604" y="341" key="NewPhpFileDialog/0.0.1536.834@0.0.1536.834" timestamp="1603873127028" />
+    <state x="604" y="341" key="NewPhpFileDialog/0.0.1536.834@0.0.1536.834" timestamp="1603883796295" />
     <state x="425" y="189" key="run.anything.popup" timestamp="1603865819762">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="425" y="189" key="run.anything.popup/0.0.1536.834@0.0.1536.834" timestamp="1603865819762" />
-    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1603869526217">
+    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1603884170007">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup/0.0.1536.834@0.0.1536.834" timestamp="1603869526217" />
+    <state x="431" y="155" width="672" height="678" key="search.everywhere.popup/0.0.1536.834@0.0.1536.834" timestamp="1603884170007" />
   </component>
 </project>

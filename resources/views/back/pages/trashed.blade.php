@@ -7,7 +7,7 @@
             <div class="container-fluid">
                 <h1 class="mt-4">Sayfalar
                     <small class="float-right" style="color: red">{{$pages->count()}} Sayfa Bulundu | <a
-                            href="{{route('admin.page.trashed')}}" class="btn btn-warning btn-sm"><i class="fa fa-trash"></i> Silinen Sayfalar</a>
+                            href="{{route('admin.page.index')}}" class="btn btn-primary btn-sm"> Aktif Sayfalar</a>
                     </small>
                 </h1>
                 <ol class="breadcrumb mb-4">
@@ -60,14 +60,11 @@
                                         </td>
                                         <td>{{$item->created_at}}</td>
                                         <td>
-                                            <a target="_blank" href="{{route('front.page',$item->slug)}}"
-                                               class="btn btn-warning btn-sm" title="{{$item->title}}"><i
-                                                    class="fa fa-eye"></i></a>
-                                            <a href="{{route('admin.page.edit',$item->id)}}"
-                                               class="btn btn-primary btn-sm"><i class="fa fa-edit"></i></a>
-                                            <button type="button" class="btn btn-danger btn-sm isDeletePage"
-                                                    data-url="{{route('admin.page.delete',$item->id)}}"
-                                            ><i class="fa fa-trash"></i></button>
+                                            <a href="{{route('admin.page.recover',$item->id)}}" title="Geri Al" class="btn btn-primary btn-sm"><i
+                                                    class="fa fa-recycle"></i></a>
+
+                                            <button type="button" class="btn btn-danger btn-sm isPageHardDelete" data-url="{{route('admin.page.hardDelete',$item->id)}}"><i class="fa fa-trash"></i></button>
+
                                         </td>
                                     </tr>
                                 @empty

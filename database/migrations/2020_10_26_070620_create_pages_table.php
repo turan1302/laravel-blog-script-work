@@ -22,6 +22,7 @@ class CreatePagesTable extends Migration
             $table->integer('order');
             $table->integer('status')->default(0)->comment("0 ise pasif 1 ise aktif");
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 

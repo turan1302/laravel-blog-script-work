@@ -1,14 +1,14 @@
 @extends('back.layout.content')
-@section('title','Makale Ekle')
+@section('title','Kategori Ekle')
 @section('content')
 
     <div id="layoutSidenav_content">
         <main>
             <div class="container-fluid">
-                <h1 class="mt-4">Yeni Makale Ekle</h1>
+                <h1 class="mt-4">Yeni Kategori Ekle</h1>
                 <div class="card shadow mb-4">
                     <div class="card-header py-3">
-                        <h6 class="m-0 font-weight-bold text-primary">Makale Bilgileri</h6>
+                        <h6 class="m-0 font-weight-bold text-primary">Kategori Bilgileri</h6>
                     </div>
                     <div class="card-body">
                         <form action="{{route('admin.category.store')}}" method="post">

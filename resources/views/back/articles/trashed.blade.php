@@ -7,8 +7,7 @@
             <div class="container-fluid">
                 <h1 class="mt-4">Silinen Makaleler
                     <small class="float-right" style="color: red">{{$articles->count()}} Makale Bulundu |
-                        <a href="{{route('admin.article.index')}}" class="btn btn-primary btn-sm"><i
-                                class="fa fa-trash"></i> Aktif Makaleler</a>
+                        <a href="{{route('admin.article.index')}}" class="btn btn-primary btn-sm"> Aktif Makaleler</a>
                     </small>
                 </h1>
                 <ol class="breadcrumb mb-4">

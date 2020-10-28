@@ -65,8 +65,16 @@ Route::group(['prefix'=>'panel','namespace'=>"Back",'as'=>'admin.'],function (){
     // SAYFALAR
     Route::group(['prefix'=>'page','middleware'=>'auth','as'=>'page.'],function (){
         Route::get('','PageController@index')->name('index');
+        Route::post('','PageController@store')->name('store');
+        Route::get('create','PageController@create')->name('create');
+        Route::get('geri-donusum','PageController@trashed')->name('trashed');
+        Route::get('geri-al/{id}','PageController@recover')->name('recover');
+        Route::post('kalici-sil/{id}','PageController@hardDelete')->name('hardDelete');
         Route::group(['prefix'=>'{page}'],function (){
+            Route::patch('','PageController@update')->name('update');
+            Route::get('edit','PageController@edit')->name('edit');
             Route::post('switch','PageController@switch')->name('switch');
+            Route::delete('','PageController@destroy')->name('delete');
         });
     });
 
