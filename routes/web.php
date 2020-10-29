@@ -79,11 +79,18 @@ Route::group(['prefix'=>'panel','namespace'=>"Back",'as'=>'admin.'],function (){
         });
     });
 
+    // AYARLAR
+    Route::group(['prefix'=>'settings','middleware'=>'auth','as'=>'settings.'],function (){
+        Route::get('','ConfigController@index')->name('index');
+        Route::post('{config}','ConfigController@update')->name('update');
+    });
+
 });
 
 
 // ÖN PANEL KISMI
 Route::group(['prefix'=>'/','namespace'=>"Front",'as'=>'front.'],function (){
+
     Route::get('','Homepage@index')->name('index');
 
     /*************************************************************************************************************
@@ -101,12 +108,5 @@ Route::group(['prefix'=>'/','namespace'=>"Front",'as'=>'front.'],function (){
 
 });
 
-
-
-
-
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
-
-Route::get('/home', 'HomeController@index')->name('home');

@@ -2,7 +2,9 @@
 
 namespace App\Providers;
 
+use App\Models\Config;
 use Illuminate\Support\ServiceProvider;
+use Illuminate\View\View;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -23,6 +25,6 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        \view()->share("config",Config::first());
     }
 }

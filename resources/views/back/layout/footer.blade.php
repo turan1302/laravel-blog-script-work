@@ -1,12 +1,7 @@
 <footer class="py-4 bg-light mt-auto">
     <div class="container-fluid">
         <div class="d-flex align-items-center justify-content-between small">
-            <div class="text-muted">Copyright &copy; Blog Sitesi Admin {{date('Y')}}</div>
-            <div>
-                <a href="#">Privacy Policy</a>
-                &middot;
-                <a href="#">Terms &amp; Conditions</a>
-            </div>
+            <div class="text-muted">Tüm Haklası Saklıdır &copy; {{ $config->title." ".date('Y')}}</div>
         </div>
     </div>
 </footer>

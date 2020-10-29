@@ -51,14 +51,10 @@
                         </nav>
                     </div>
 
-                    <div class="sb-sidenav-menu-heading">Addons</div>
-                    <a class="nav-link" href="charts.html">
-                        <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
-                        Charts
-                    </a>
-                    <a class="nav-link" href="tables.html">
-                        <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
-                        Tables
+                    <div class="sb-sidenav-menu-heading">Ayarlar</div>
+                    <a class="nav-link" href="{{route('admin.settings.index')}}">
+                        <div class="sb-nav-link-icon"><i class="fas fa-cog"></i></div>
+                        Site Ayarları
                     </a>
                     <a class="nav-link" target="_blank" href="{{route('front.index')}}">
                         <div class="sb-nav-link-icon"><i class="fa fa-globe"></i></div>

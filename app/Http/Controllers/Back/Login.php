@@ -24,7 +24,7 @@ class Login extends Controller
             toastr()->success("Tekrar Hoşgeldin ".\auth()->user()->name,"Giriş Başarılı");
             return redirect()->route('admin.index');
         } else {
-            return redirect()->back()->with("warning","E-Mail Adrresiniz ve/veya Şifreniz Yanlış");
+            return redirect()->back()->with("warning","E-Mail Adresiniz ve/veya Şifreniz Yanlış");
         }
 
     }
